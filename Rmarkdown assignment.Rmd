@@ -1,0 +1,17 @@
+---
+title: "interactive map assignment"
+author: "Roisin Kearins"
+date: "19 December 2020"
+output: html_document
+---
+```{r}
+
+library(leaflet)
+m <- leaflet()
+m <- addTiles(m)
+m <- addCircleMarkers(m, color="red", 
+                      lng=6.958217024566135,
+                      lat=50.94143386888037,
+                      popup="Colgone Cathedral is the next place that I want to visit")
+m
+```
